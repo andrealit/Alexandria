@@ -16,6 +16,8 @@
 		F4DD247B232412F7006D5B95 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD247A232412F7006D5B95 /* MapViewController.swift */; };
 		F4DD247F23241434006D5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD247E23241434006D5B95 /* CoreDataStack.swift */; };
 		F4DD248123242426006D5B95 /* FlickrData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD248023242426006D5B95 /* FlickrData.swift */; };
+		F4DD248323242637006D5B95 /* Pin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD248223242637006D5B95 /* Pin+CoreDataProperties.swift */; };
+		F4DD248523242657006D5B95 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD248423242657006D5B95 /* Image+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F4DD247A232412F7006D5B95 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F4DD247E23241434006D5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F4DD248023242426006D5B95 /* FlickrData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrData.swift; sourceTree = "<group>"; };
+		F4DD248223242637006D5B95 /* Pin+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F4DD248423242657006D5B95 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			children = (
 				F4DD247E23241434006D5B95 /* CoreDataStack.swift */,
 				F4DD248023242426006D5B95 /* FlickrData.swift */,
+				F4DD248223242637006D5B95 /* Pin+CoreDataProperties.swift */,
+				F4DD248423242657006D5B95 /* Image+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,9 +180,11 @@
 				F4DD248123242426006D5B95 /* FlickrData.swift in Sources */,
 				F4DD247F23241434006D5B95 /* CoreDataStack.swift in Sources */,
 				F4DD246D2323F676006D5B95 /* CaseCarry.xcdatamodeld in Sources */,
+				F4DD248323242637006D5B95 /* Pin+CoreDataProperties.swift in Sources */,
 				F4DD24672323F676006D5B95 /* MessageViewController.swift in Sources */,
 				F4DD24652323F676006D5B95 /* AppDelegate.swift in Sources */,
 				F4DD247B232412F7006D5B95 /* MapViewController.swift in Sources */,
+				F4DD248523242657006D5B95 /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
