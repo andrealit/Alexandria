@@ -250,18 +250,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-V2-HDw">
                                 <rect key="frame" x="30" y="144" width="354" height="668"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="153.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-WO-wKb" userLabel="Freshman Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="86" height="153.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Freshman" image="Freshman">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8k-mh-6T2" userLabel="Sophomore Button">
-                                                <rect key="frame" x="86" y="0.0" width="268" height="153.5"/>
+                                                <rect key="frame" x="244" y="0.0" width="110" height="22"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Sophomore" image="Sophomore">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,17 +269,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
-                                        <rect key="frame" x="0.0" y="312.5" width="354" height="119"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
+                                        <rect key="frame" x="0.0" y="181" width="354" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-HD-0mY" userLabel="Junior Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="165.5" height="119"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="22"/>
                                                 <state key="normal" title="Junior" image="Junior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-JC-s2y" userLabel="Senior Button">
-                                                <rect key="frame" x="165.5" y="0.0" width="188.5" height="119"/>
+                                                <rect key="frame" x="286" y="0.0" width="68" height="22"/>
                                                 <state key="normal" title="Senior" image="Senior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -287,10 +287,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m55-Zr-Qfs">
-                                        <rect key="frame" x="0.0" y="590.5" width="354" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="362" width="354" height="306"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-Pu-GZc" userLabel="Grad Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="306"/>
                                                 <state key="normal" title="Grad" image="Grad">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
