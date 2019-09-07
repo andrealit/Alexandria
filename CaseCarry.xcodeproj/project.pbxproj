@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4712BCC2324488700C97BF6 /* FlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4712BCB2324488700C97BF6 /* FlickrViewController.swift */; };
 		F4712BCE2324493900C97BF6 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4712BCD2324493900C97BF6 /* CoreDataViewController.swift */; };
+		F4712BD123244A0500C97BF6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4712BD023244A0500C97BF6 /* CollectionViewCell.swift */; };
 		F4DD24652323F676006D5B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD24642323F676006D5B95 /* AppDelegate.swift */; };
 		F4DD24672323F676006D5B95 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD24662323F676006D5B95 /* MessageViewController.swift */; };
 		F4DD246A2323F676006D5B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DD24682323F676006D5B95 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F4712BCB2324488700C97BF6 /* FlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewController.swift; sourceTree = "<group>"; };
 		F4712BCD2324493900C97BF6 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		F4712BD023244A0500C97BF6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F4DD24612323F676006D5B95 /* CaseCarry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseCarry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DD24642323F676006D5B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4DD24662323F676006D5B95 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -94,12 +96,12 @@
 		F4DD24632323F676006D5B95 /* CaseCarry */ = {
 			isa = PBXGroup;
 			children = (
-				F4712BCF2324498C00C97BF6 /* Screens */,
-				F4712BC9232445A200C97BF6 /* Search Folder */,
 				F4DD24642323F676006D5B95 /* AppDelegate.swift */,
 				F4DD24732323F678006D5B95 /* Info.plist */,
+				F4712BCF2324498C00C97BF6 /* Screens */,
 				F4DD247D232413C4006D5B95 /* Data Model */,
 				F4DD247C23241393006D5B95 /* Model */,
+				F4712BC9232445A200C97BF6 /* Search Folder */,
 				F4DD247923240E7F006D5B95 /* Map Folder */,
 				F4712BCA232447A400C97BF6 /* Question Folder */,
 				F4DD246E2323F678006D5B95 /* Assets.xcassets */,
@@ -113,6 +115,7 @@
 				F4DD247A232412F7006D5B95 /* MapViewController.swift */,
 				F4712BCB2324488700C97BF6 /* FlickrViewController.swift */,
 				F4712BCD2324493900C97BF6 /* CoreDataViewController.swift */,
+				F4712BD023244A0500C97BF6 /* CollectionViewCell.swift */,
 			);
 			path = "Map Folder";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				F4712BCC2324488700C97BF6 /* FlickrViewController.swift in Sources */,
 				F4DD247B232412F7006D5B95 /* MapViewController.swift in Sources */,
 				F4DD248523242657006D5B95 /* Image+CoreDataProperties.swift in Sources */,
+				F4712BD123244A0500C97BF6 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
