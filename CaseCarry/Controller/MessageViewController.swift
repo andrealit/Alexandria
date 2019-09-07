@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MessageViewController.swift
 //  CaseCarry
 //
 //  Created by Andrea Tongsak on 9/7/19.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// MARK: - MessageViewController
 
+class MessageViewController: UIViewController {
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
 
 
 }

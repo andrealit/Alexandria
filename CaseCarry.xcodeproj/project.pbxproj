@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F4DD24652323F676006D5B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD24642323F676006D5B95 /* AppDelegate.swift */; };
-		F4DD24672323F676006D5B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD24662323F676006D5B95 /* ViewController.swift */; };
+		F4DD24672323F676006D5B95 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD24662323F676006D5B95 /* MessageViewController.swift */; };
 		F4DD246A2323F676006D5B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DD24682323F676006D5B95 /* Main.storyboard */; };
 		F4DD246D2323F676006D5B95 /* CaseCarry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4DD246B2323F676006D5B95 /* CaseCarry.xcdatamodeld */; };
 		F4DD246F2323F678006D5B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DD246E2323F678006D5B95 /* Assets.xcassets */; };
 		F4DD24722323F678006D5B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DD24702323F678006D5B95 /* LaunchScreen.storyboard */; };
+		F4DD247B232412F7006D5B95 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD247A232412F7006D5B95 /* MapViewController.swift */; };
+		F4DD247F23241434006D5B95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD247E23241434006D5B95 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4DD24612323F676006D5B95 /* CaseCarry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseCarry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DD24642323F676006D5B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4DD24662323F676006D5B95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4DD24662323F676006D5B95 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		F4DD24692323F676006D5B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DD246C2323F676006D5B95 /* CaseCarry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaseCarry.xcdatamodel; sourceTree = "<group>"; };
 		F4DD246E2323F678006D5B95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DD24712323F678006D5B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4DD24732323F678006D5B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DD247A232412F7006D5B95 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F4DD247E23241434006D5B95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		F4DD24632323F676006D5B95 /* CaseCarry */ = {
 			isa = PBXGroup;
 			children = (
+				F4DD247D232413C4006D5B95 /* Data Model */,
+				F4DD247C23241393006D5B95 /* Model */,
+				F4DD247923240E7F006D5B95 /* Controller */,
 				F4DD24642323F676006D5B95 /* AppDelegate.swift */,
-				F4DD24662323F676006D5B95 /* ViewController.swift */,
 				F4DD24682323F676006D5B95 /* Main.storyboard */,
 				F4DD246E2323F678006D5B95 /* Assets.xcassets */,
 				F4DD24702323F678006D5B95 /* LaunchScreen.storyboard */,
 				F4DD24732323F678006D5B95 /* Info.plist */,
-				F4DD246B2323F676006D5B95 /* CaseCarry.xcdatamodeld */,
 			);
 			path = CaseCarry;
+			sourceTree = "<group>";
+		};
+		F4DD247923240E7F006D5B95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD24662323F676006D5B95 /* MessageViewController.swift */,
+				F4DD247A232412F7006D5B95 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4DD247C23241393006D5B95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD247E23241434006D5B95 /* CoreDataStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4DD247D232413C4006D5B95 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD246B2323F676006D5B95 /* CaseCarry.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DD247F23241434006D5B95 /* CoreDataStack.swift in Sources */,
 				F4DD246D2323F676006D5B95 /* CaseCarry.xcdatamodeld in Sources */,
-				F4DD24672323F676006D5B95 /* ViewController.swift in Sources */,
+				F4DD24672323F676006D5B95 /* MessageViewController.swift in Sources */,
 				F4DD24652323F676006D5B95 /* AppDelegate.swift in Sources */,
+				F4DD247B232412F7006D5B95 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
