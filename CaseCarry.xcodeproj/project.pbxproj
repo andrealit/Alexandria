@@ -60,14 +60,14 @@
 		F4DD24632323F676006D5B95 /* CaseCarry */ = {
 			isa = PBXGroup;
 			children = (
+				F4DD24642323F676006D5B95 /* AppDelegate.swift */,
+				F4DD24732323F678006D5B95 /* Info.plist */,
 				F4DD247D232413C4006D5B95 /* Data Model */,
 				F4DD247C23241393006D5B95 /* Model */,
 				F4DD247923240E7F006D5B95 /* Controller */,
-				F4DD24642323F676006D5B95 /* AppDelegate.swift */,
 				F4DD24682323F676006D5B95 /* Main.storyboard */,
 				F4DD246E2323F678006D5B95 /* Assets.xcassets */,
 				F4DD24702323F678006D5B95 /* LaunchScreen.storyboard */,
-				F4DD24732323F678006D5B95 /* Info.plist */,
 			);
 			path = CaseCarry;
 			sourceTree = "<group>";
