@@ -24,10 +24,20 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate, MKMapVie
     
     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Pin")
     
+    let regionRadius: CLLocationDistance = 1000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.firstSetup()
         self.loadData()
+        
+        // set initial location in Cleveland's University Circle
+        let initialLocation = CLLocation(latitude: 41.5045992, longitude: -81.60971339999998)
+        centerMapOnLocation(location: initialLocation)
     }
     
     // user adding pin to map view

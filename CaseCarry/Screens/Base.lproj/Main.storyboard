@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ry9-Hn-HEj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eku-Sg-zPv">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iDd-cJ-HTQ" userLabel="messageCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="57" id="iDd-cJ-HTQ" userLabel="messageCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iDd-cJ-HTQ" id="C16-Oy-PB7">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -37,13 +37,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhb-VI-yDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="1029"/>
+            <point key="canvasLocation" x="1992.753623188406" y="714.50892857142856"/>
         </scene>
         <!--Question Navigator-->
         <scene sceneID="xRd-FQ-MYd">
             <objects>
                 <navigationController id="nl1-u0-KoG" userLabel="Question Navigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7dJ-Jx-vVu" userLabel="Search"/>
+                    <tabBarItem key="tabBarItem" title="Q&amp;A" id="7dJ-Jx-vVu" userLabel="Search"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yew-k8-Uq0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -54,13 +54,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEj-8U-JgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="1029"/>
+            <point key="canvasLocation" x="1074" y="715"/>
         </scene>
         <!--Map Navigator-->
         <scene sceneID="UdX-Gl-b9u">
             <objects>
                 <navigationController id="XGs-am-0Vs" userLabel="Map Navigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="k8z-mG-y8b" userLabel="Map"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="k8z-mG-y8b" userLabel="Map"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qde-mp-yMR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -71,7 +71,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnf-gC-773" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="194"/>
+            <point key="canvasLocation" x="1049" y="31"/>
         </scene>
         <!--Tourist-->
         <scene sceneID="ID1-9a-QH8">
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ix-wM-QIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073.913043478261" y="193.52678571428569"/>
+            <point key="canvasLocation" x="1988" y="31"/>
         </scene>
         <!--Pin View Controller-->
         <scene sceneID="cxy-TZ-0ER">
@@ -153,17 +153,24 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-N1-i0e">
-                                <rect key="frame" x="42" y="761" width="331" height="35"/>
+                                <rect key="frame" x="20" y="746" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.29759129637730219" green="0.6759406704168639" blue="0.98576336853212432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="QZq-gw-ALA"/>
+                                    <constraint firstAttribute="width" constant="374" id="7HF-Ub-PGe"/>
+                                    <constraint firstAttribute="height" constant="50" id="QZq-gw-ALA"/>
                                 </constraints>
-                                <state key="normal" title="Refresh Photos"/>
+                                <state key="normal" title="Refresh Photos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="collection:" destination="O6W-E3-cuR" eventType="touchUpInside" id="cQs-9c-bvL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kzh-N1-i0e" firstAttribute="centerX" secondItem="3nN-tw-Sdj" secondAttribute="centerX" id="h2z-t7-mDi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3nN-tw-Sdj"/>
                     </view>
                     <connections>
@@ -174,13 +181,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Iv-Q7-WRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2928.985507246377" y="194.86607142857142"/>
+            <point key="canvasLocation" x="2842.0289855072465" y="32.8125"/>
         </scene>
         <!--Search Navigator-->
         <scene sceneID="Vd1-9h-3ty">
             <objects>
                 <navigationController id="bXC-GT-BKS" userLabel="Search Navigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PuD-AJ-rMO"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="PuD-AJ-rMO" userLabel="Search"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XS6-qR-vuB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -191,7 +198,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6e5-dL-MCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="-595"/>
+            <point key="canvasLocation" x="1049" y="-757"/>
         </scene>
         <!--Q&A View Controller-->
         <scene sceneID="L0w-CJ-jHe">
@@ -229,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgP-rD-Mrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073.913043478261" y="-600"/>
+            <point key="canvasLocation" x="1988" y="-762"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2mm-i6-vOz">
@@ -298,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2980" y="1029"/>
+            <point key="canvasLocation" x="2900" y="715"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jZ9-Ou-baX">
@@ -324,18 +331,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-V2-HDw">
                                 <rect key="frame" x="30" y="144" width="354" height="668"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="153.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-WO-wKb" userLabel="Freshman Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Freshman" image="Freshman">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8k-mh-6T2" userLabel="Sophomore Button">
-                                                <rect key="frame" x="96" y="0.0" width="258" height="22"/>
+                                                <rect key="frame" x="86" y="0.0" width="268" height="153.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Sophomore" image="Sophomore">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -343,17 +350,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
-                                        <rect key="frame" x="0.0" y="181" width="354" height="22"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
+                                        <rect key="frame" x="0.0" y="312.5" width="354" height="119"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-HD-0mY" userLabel="Junior Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165.5" height="119"/>
                                                 <state key="normal" title="Junior" image="Junior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-JC-s2y" userLabel="Senior Button">
-                                                <rect key="frame" x="67" y="0.0" width="287" height="22"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="188.5" height="119"/>
                                                 <state key="normal" title="Senior" image="Senior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -361,10 +368,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m55-Zr-Qfs">
-                                        <rect key="frame" x="0.0" y="362" width="354" height="306"/>
+                                        <rect key="frame" x="0.0" y="590.5" width="354" height="77.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-Pu-GZc" userLabel="Grad Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="306"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="77.5"/>
                                                 <state key="normal" title="Grad" image="Grad">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -390,9 +397,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bjp-TW-6zV"/>
                     </view>
-                    <connections>
-                        <segue destination="eku-Sg-zPv" kind="show" id="uFm-ys-BQP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imf-3z-GwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
