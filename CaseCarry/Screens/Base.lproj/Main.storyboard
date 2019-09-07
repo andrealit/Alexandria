@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="57" id="iDd-cJ-HTQ" userLabel="messageCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="question" rowHeight="57" id="iDd-cJ-HTQ" userLabel="messageCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iDd-cJ-HTQ" id="C16-Oy-PB7">
@@ -107,12 +107,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-IS-lmb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-IS-lmb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mMZ-dt-sKN"/>
+                                </constraints>
                             </mapView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vWA-6R-Jqj">
-                                <rect key="frame" x="20" y="292" width="374" height="446"/>
+                                <rect key="frame" x="20" y="296" width="374" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k1C-Kb-3Rr">
@@ -152,7 +154,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-N1-i0e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-N1-i0e">
                                 <rect key="frame" x="20" y="746" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.29759129637730219" green="0.6759406704168639" blue="0.98576336853212432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -169,7 +171,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kzh-N1-i0e" firstAttribute="centerX" secondItem="3nN-tw-Sdj" secondAttribute="centerX" id="h2z-t7-mDi"/>
+                            <constraint firstItem="3nN-tw-Sdj" firstAttribute="trailing" secondItem="kzh-N1-i0e" secondAttribute="trailing" constant="20" id="F5C-RB-lZK"/>
+                            <constraint firstItem="UZV-IS-lmb" firstAttribute="leading" secondItem="3nN-tw-Sdj" secondAttribute="leading" id="Hhx-Wz-12M"/>
+                            <constraint firstItem="3nN-tw-Sdj" firstAttribute="bottom" secondItem="kzh-N1-i0e" secondAttribute="bottom" constant="17" id="TMN-Rs-7rA"/>
+                            <constraint firstItem="UZV-IS-lmb" firstAttribute="centerX" secondItem="3nN-tw-Sdj" secondAttribute="centerX" id="TWq-KX-4VH"/>
+                            <constraint firstItem="UZV-IS-lmb" firstAttribute="top" secondItem="3nN-tw-Sdj" secondAttribute="top" id="dEi-SW-8bB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3nN-tw-Sdj"/>
                     </view>
@@ -218,7 +224,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="question" id="oTK-Wv-LPc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feature" id="oTK-Wv-LPc">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTK-Wv-LPc" id="eQF-9s-TpO">
@@ -232,7 +238,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WXR-q6-9dE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="joh-Mr-0ag"/>
+                    <navigationItem key="navigationItem" title="Menu" id="joh-Mr-0ag" userLabel="Menu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgP-rD-Mrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,18 +337,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-V2-HDw">
                                 <rect key="frame" x="30" y="144" width="354" height="668"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="153.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-ZG-YYh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-WO-wKb" userLabel="Freshman Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="86" height="153.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Freshman" image="Freshman">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8k-mh-6T2" userLabel="Sophomore Button">
-                                                <rect key="frame" x="86" y="0.0" width="268" height="153.5"/>
+                                                <rect key="frame" x="244" y="0.0" width="110" height="22"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Sophomore" image="Sophomore">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -350,17 +356,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
-                                        <rect key="frame" x="0.0" y="312.5" width="354" height="119"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-RF-YKh">
+                                        <rect key="frame" x="0.0" y="181" width="354" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-HD-0mY" userLabel="Junior Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="165.5" height="119"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="22"/>
                                                 <state key="normal" title="Junior" image="Junior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-JC-s2y" userLabel="Senior Button">
-                                                <rect key="frame" x="165.5" y="0.0" width="188.5" height="119"/>
+                                                <rect key="frame" x="286" y="0.0" width="68" height="22"/>
                                                 <state key="normal" title="Senior" image="Senior">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -368,10 +374,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m55-Zr-Qfs">
-                                        <rect key="frame" x="0.0" y="590.5" width="354" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="362" width="354" height="306"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-Pu-GZc" userLabel="Grad Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="306"/>
                                                 <state key="normal" title="Grad" image="Grad">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
