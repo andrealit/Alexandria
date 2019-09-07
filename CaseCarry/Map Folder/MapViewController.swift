@@ -47,13 +47,15 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate, MKMapVie
     
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
-            
+            checkLocationAuthorization()
         } else {
-            
+            let alertController = UIAlertController(title: "Location Services", message: "Location must be activated in Settings for user map.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "Must have location services on for map.", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
         }
     }
     
-    func checkAuthorizationAuthorization() {
+    func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
             mapView.showsUserLocation = true
