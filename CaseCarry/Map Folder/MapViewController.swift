@@ -6,8 +6,13 @@
 //  Copyright © 2019 Andrea Tongsak. All rights reserved.
 //
 
-import Foundation
+import MapKit
 import UIKit
+import CoreData
+
+// MARK: Setting up delegate
+
+let delegate = UIApplication.shared.delegate as! AppDelegate
 
 class MapViewController {
     // MARK: Outlets and Properties
