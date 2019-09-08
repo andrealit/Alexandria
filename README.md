@@ -4,6 +4,11 @@ App created at 2019 Case Welcome Back Hackathon.
 ## Objective
 An iOS app that will make navigating Case Western Reserve University easier! All data points and notifications provided by students.
 
+## Features
+### Search
+
+### C
+
 ## How to use the app
 
 ## Build and Install
