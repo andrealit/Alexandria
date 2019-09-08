@@ -1,4 +1,4 @@
-# Case-Carry
+# Alexandria
 App created at 2019 Case Welcome Back Hackathon.
 
 ## Objective
